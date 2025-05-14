@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding: 0 15px;
+  padding: 2px 15px;
   position: sticky;
   top: 0;
   left: 0;
@@ -28,11 +28,11 @@
 .logo-mobile-view {
   align-self: center;
   width: 10%;
-  padding: 0.3rem 0;
 }
 .logo-mobile-image {
-  width: 100%;
+  width: 90%;
   height: auto;
+
 }
 /*SEARCH*/
 .search {
@@ -122,7 +122,7 @@
   background-color: var(--NAV-LINK-BGCOLOR);
 }
 /*LARGE VIEW*/
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 622px) {
   .logo-mobile-view {
     display: none;
   }
@@ -149,7 +149,7 @@
     display: flex;
     gap: 0.2rem;
     text-align: left;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .nav-desktop-view a{
     padding: 0.5rem 0;
