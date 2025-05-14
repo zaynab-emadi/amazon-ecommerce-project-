@@ -1,10 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-orders
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Zaynab Emadi" />
+    <meta name="keywords" content="ecommerce, amazon, project" />
+    <meta name="description" content="Amazon Ecommerce" />
+    <title>Orders</title>
+    <link rel="stylesheet" href="styles/shared/general.css" />
+    <link rel="stylesheet" href="styles/shared/header.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="header-bar">
+        <section class="logo-desktop-view">
+          <a href="amazon.html"
+            ><img
+              src="images/logos/amazon-logo-white.png"
+              alt="Amazon Logo"
+              width="194"
+              height="60"
+              class="logo-desktop-image"
+          /></a>
+        </section>
+        <section class="logo-mobile-view">
+          <a href="amazon.html"
+            ><img
+              src="images/logos/amazon-mobile-logo-white.png"
+              alt="Amazon Logo"
+              width="189"
+              height="194"
+              class="logo-mobile-image"
+          /></a>
+        </section>
+        <section class="search">
+          <label for="search" class="offscreen">search</label>
+          <input
+            type="search"
+            id="search"
+            placeholder="search"
+            class="search-input"
+          />
+          <button class="search-button">
+            <img
+              src="images/icon/search-icon.png"
+              alt="search"
+              width="45"
+              height="45"
+              class="search-icon"
+            />
+          </button>
+        </section>
+        <section class="nav-desktop-view">
+          <a href="orders.html" class="order-link"
+            >Returns<span class="nowrap">&</span> orders </a
+          ><a href="cart.html" class="cart-link"
+            ><img
+              src="images/icon/cart-icon.png"
+              alt="cart-icon"
+              width="78"
+              height="54"
+              class="cart-icon"
+            />
+            <p class="cart-text">cart</p>
+          </a>
+        </section>
+        <section
+          class="menu"
+          onclick="document.querySelector('.nav-mobile-view').classList.toggle('active')"
+        >
+          <img
+            class="menu-icon"
+            src="images/icon/hamburger-menu.png"
+            alt="menu"
+          />
+        </section>
+      </section>
+      <nav class="nav-mobile-view">
+        <ul>
+          <li>
+            <a href="orders.html">Returns & Orders</a>
+          </li>
+          <li>
+            <a href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
