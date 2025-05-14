@@ -1,0 +1,37 @@
+@import url(../shared/general.css);
+
+/*---HEADER---*/
+/*| GENERAL*/
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2px 15px;
+}
+.amazon-logo-desktop {
+  display: none;
+}
+.amazon-logo-mobile {
+  width: 35px;
+  height: auto;
+}
+.cart-header-middle-section a {
+  color: var(--CART-HEADER-LINK-COLOR);
+}
+@media screen and (min-width: 575px) {
+  .amazon-logo-mobile {
+    display: none;
+  }
+  .amazon-logo-desktop {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+  }
+}
