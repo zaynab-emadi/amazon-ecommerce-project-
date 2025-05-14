@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* |RESET*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style: none;
+}
+/* |UTILITY CLASSES*/
+.offscreen{
+    position: absolute;
+    left: -1000px;
+}
+.nowrap{
+    white-space: nowrap;
+}
+/* |VARIABLES*/
+:root {
+    /*FONT*/
+    --FONT-FAMILY: 'Nunito';
+    --FONT-SIZE : 16px;
+    /*COLOR*/
+    --HEADER-COLOR: #ffffff;
+    --HEADERBG : #131921;
+    --SEARCH-BUTTON-BG : #efa710;
+    --NAV-LINK-BGCOLOR:#26323f;
+    /*BORDER*/
+    --BORDERS : 1px solid #131921;
+    --BORDER-RADIUS : 5px;
+}
+/*GENERAL*/
+html{
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: var(--FONT-FAMILY), sans-serif;
+    font-size: var(--FONT-SIZE);
+    min-height: 100vh;
+}
