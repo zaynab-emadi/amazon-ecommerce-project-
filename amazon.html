@@ -15,27 +15,25 @@
   <body>
     <header class="header">
       <section class="header-bar">
-        <section class="logo-desktop-view">
-          <a href="amazon.html"
-            ><img
-              src="images/logos/amazon-logo-white.png"
-              alt="Amazon Logo"
-              width="194"
-              height="60"
-              class="logo-desktop-image"
-          /></a>
+        <section class="header-left-section">
+          <a href="amazon.html">
+            <img
+                    src="images/logos/amazon-logo-white.png"
+                    alt="Amazon Logo"
+                    width="194"
+                    height="60"
+                    class="logo-desktop"
+            />
+            <img
+                    src="images/logos/amazon-mobile-logo-white.png"
+                    alt="Amazon Logo"
+                    width="189"
+                    height="194"
+                    class="logo-mobile"
+            />
+          </a>
         </section>
-        <section class="logo-mobile-view">
-          <a href="amazon.html"
-            ><img
-              src="images/logos/amazon-mobile-logo-white.png"
-              alt="Amazon Logo"
-              width="189"
-              height="194"
-              class="logo-mobile-image"
-          /></a>
-        </section>
-        <section class="search">
+        <section class="header-middle-section">
           <label for="search" class="offscreen">search</label>
           <input
             type="search"
@@ -53,29 +51,37 @@
             />
           </button>
         </section>
-        <section class="nav-desktop-view">
-          <a href="orders.html" class="order-link"
-            >Returns<span class="nowrap">&</span> orders </a
-          ><a href="cart.html" class="cart-link"
-            ><img
-              src="images/icon/cart-icon.png"
-              alt="cart-icon"
-              width="78"
-              height="54"
-              class="cart-icon"
+        <section class="header-right-section">
+          <nav class="nav-desktop-view">
+            <ul>
+              <li>
+                <a href="orders.html" class="order-link"
+                >Returns <span class="nowrap">& </span>Orders </a>
+              </li>
+              <li>
+                <a href="cart.html" class="cart-link"
+                ><img
+                        src="images/icon/cart-icon.png"
+                        alt="cart-icon"
+                        width="78"
+                        height="54"
+                        class="cart-icon"
+                />
+                  <p class="cart-text">cart</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button
+                  class="menu-button"
+                  onclick="document.querySelector('.nav-mobile-view').classList.toggle('active')"
+          >
+            <img
+                    class="menu-icon"
+                    src="images/icon/hamburger-menu.png"
+                    alt="menu"
             />
-            <p class="cart-text">cart</p>
-          </a>
-        </section>
-        <section
-          class="menu"
-          onclick="document.querySelector('.nav-mobile-view').classList.toggle('active')"
-        >
-          <img
-            class="menu-icon"
-            src="images/icon/hamburger-menu.png"
-            alt="menu"
-          />
+          </button>
         </section>
       </section>
       <nav class="nav-mobile-view">
