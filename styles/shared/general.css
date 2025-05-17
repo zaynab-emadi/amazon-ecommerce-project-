@@ -35,7 +35,8 @@ li{
     /*COLOR*/
     --HEADER-COLOR: #ffffff;
     --HEADERBG : #131921;
-    --SEARCH-BUTTON-BG : #efa710;
+    --SEARCH-BUTTON-BG :#febd69;
+    --SEARCH-INPUT-FOCUSE :#FF9900;
     --NAV-LINK-BGCOLOR:#26323f;
     --CART-HEADER-LINK-COLOR:#007185;
     /*BORDER*/
