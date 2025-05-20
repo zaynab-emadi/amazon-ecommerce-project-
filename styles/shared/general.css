@@ -39,9 +39,11 @@ li{
     --SEARCH-INPUT-FOCUSE :#FF9900;
     --NAV-LINK-BGCOLOR:#26323f;
     --CART-HEADER-LINK-COLOR:#007185;
+    --RATING-COUNTER : #017cb6;
     /*BORDER*/
     --BORDERS : 1px solid #131921;
     --BORDER-RADIUS : 5px;
+    --CARD-BORDERS : 1px solid #e7e7e7;
 }
 /*GENERAL*/
 html{
