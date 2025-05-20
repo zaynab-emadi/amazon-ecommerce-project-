@@ -10,7 +10,11 @@
     <title>Amazon project</title>
     <link rel="stylesheet" href="styles/shared/general.css" />
     <link rel="stylesheet" href="styles/shared/header.css" />
-    <link rel="icon" href="images/logos/amazon-mobile-logo-white.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="images/logos/amazon-mobile-logo-white.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header class="header">
@@ -18,18 +22,18 @@
         <section class="header-left-section">
           <a href="amazon.html">
             <img
-                    src="images/logos/amazon-logo-white.png"
-                    alt="Amazon Logo"
-                    width="194"
-                    height="60"
-                    class="logo-desktop"
+              src="images/logos/amazon-logo-white.png"
+              alt="Amazon Logo"
+              width="194"
+              height="60"
+              class="logo-desktop"
             />
             <img
-                    src="images/logos/amazon-mobile-logo-white.png"
-                    alt="Amazon Logo"
-                    width="189"
-                    height="194"
-                    class="logo-mobile"
+              src="images/logos/amazon-mobile-logo-white.png"
+              alt="Amazon Logo"
+              width="189"
+              height="194"
+              class="logo-mobile"
             />
           </a>
         </section>
@@ -56,30 +60,31 @@
             <ul>
               <li>
                 <a href="orders.html" class="order-link"
-                >Returns <span class="nowrap">& </span>Orders </a>
+                  >Returns <span class="nowrap">& </span>Orders
+                </a>
               </li>
               <li>
                 <a href="cart.html" class="cart-link"
-                ><img
-                        src="images/icon/cart-icon.png"
-                        alt="cart-icon"
-                        width="78"
-                        height="54"
-                        class="cart-icon"
-                />
+                  ><img
+                    src="images/icon/cart-icon.png"
+                    alt="cart-icon"
+                    width="78"
+                    height="54"
+                    class="cart-icon"
+                  />
                   <p class="cart-text">cart</p>
                 </a>
               </li>
             </ul>
           </nav>
           <button
-                  class="menu-button"
-                  onclick="document.querySelector('.nav-mobile-view').classList.toggle('active')"
+            class="menu-button"
+            onclick="document.querySelector('.nav-mobile-view').classList.toggle('active')"
           >
             <img
-                    class="menu-icon"
-                    src="images/icon/hamburger-menu.png"
-                    alt="menu"
+              class="menu-icon"
+              src="images/icon/hamburger-menu.png"
+              alt="menu"
             />
           </button>
         </section>
@@ -95,32 +100,141 @@
         </ul>
       </nav>
     </header>
-  <main>
-    <section class="card-container">
-      <section class="card">
-        <img src="" alt="" class="card-image" >
-        <h3></h3>
-        <img src="" alt="" class="rating">
-        <p class="vote-counter"></p>
-        <p class="card-price"></p>
-        <label for="quantity"></label>
-        <select name="Quantity" id="quantity">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-        <button>
-          add to cart
-        </button>
+    <main>
+      <section class="card-container">
+        <section class="card">
+          <img
+            src="images/products/athletic-cotton-socks-6-pairs.jpg"
+            alt="athletic-cotton-socks-6-pairs"
+            class="card-image"
+            width="679"
+            height="753"
+          />
+          <h3>Black and Gray Athletic Cotton Socks - 6 Pairs</h3>
+          <img
+            src="images/ratings/rating-45.png"
+            alt="4.5 point"
+            class="rating"
+            width="192"
+            height="38"
+          />
+          <p class="vote-counter">87</p>
+          <p class="card-price">$10.90</p>
+          <label for="quantity-socks" class="offscreen"></label>
+          <select name="Quantity" id="quantity-socks">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button>add to cart</button>
+        </section>
+        <section class="card">
+          <img
+            src="images/products/intermediate-composite-basketball.jpg"
+            alt="basketball"
+            class="card-image"
+            width="679"
+            height="675"
+          />
+          <h3>Intermediate Size Basketball</h3>
+          <img
+            src="images/ratings/rating-40.png"
+            alt="4.0 point"
+            class="rating"
+            width="192"
+            height="38"
+          />
+          <p class="vote-counter">127</p>
+          <p class="card-price">$20.95</p>
+          <label for="quantity-basketball" class="offscreen"></label>
+          <select name="Quantity" id="quantity-basketball">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button>add to cart</button>
+        </section>
+        <section class="card">
+          <img
+            src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+            alt="Adults Plain Cotton T-Shirt - 2 Pack"
+            class="card-image"
+            width="679"
+            height="717"
+          />
+          <h3>Adults Plain Cotton T-Shirt - 2 Pack</h3>
+          <img
+            src="images/ratings/rating-45.png"
+            alt="4.5 point"
+            class="rating"
+            width="192"
+            height="38"
+          />
+          <p class="vote-counter">56</p>
+          <p class="card-price">$7.99</p>
+          <label for="quantity-tshirt" class="offscreen"></label>
+          <select name="Quantity" id="quantity-tshirt">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button>add to cart</button>
+        </section>
+        <section class="card">
+          <img
+            src="images/products/black-2-slot-toaster.jpg"
+            alt="2 Slot Toaster - Black"
+            class="card-image"
+            width="679"
+            height="782"
+          />
+          <h3>2 Slot Toaster - Black</h3>
+          <img
+            src="images/ratings/rating-50.png"
+            alt="5.0 point"
+            class="rating"
+            width="192"
+            height="38"
+          />
+          <p class="vote-counter">2197</p>
+          <p class="card-price">$18.99</p>
+          <label for="quantity-toaster" class="offscreen"></label>
+          <select name="Quantity" id="quantity-toaster">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button>add to cart</button>
+        </section>
       </section>
-    </section>
-  </main>
+    </main>
   </body>
 </html>
