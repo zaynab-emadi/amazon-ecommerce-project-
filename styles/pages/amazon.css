@@ -46,9 +46,9 @@
 .card {
   padding: 2rem;
   display: grid;
-  grid-template-rows: 50% 40px;
-  gap: 0.8rem;
+  grid-template-rows: 60% 40px;
   border: var(--CARD-BORDERS);
+  gap: 0.3rem;
 }
 .card-figure {
   display: flex;
@@ -75,7 +75,26 @@
 .vote-counter{
   color: var(--RATING-COUNTER);
 }
+.vote-counter:hover{
+  cursor: pointer;
+}
 img.rating{
   width: 60%;
   height: auto;
 }
+.card-price{
+  font-weight: bold;
+}
+.card-select{
+  width: 30%;
+  padding: 0.3rem;
+  border-radius: 8px;
+  background-color: var(--QUANTITY-BGCOLOR);
+  border: #d5d9d9 1px solid;
+  box-shadow : 1px 1px 1px #e7e7e7
+}
+.card-select:focus, .card-select:focus-within{
+  border: #f08804 solid 2px;
+}
+
+
