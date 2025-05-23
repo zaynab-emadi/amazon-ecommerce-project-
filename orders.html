@@ -10,90 +10,151 @@
     <title>Orders</title>
     <link rel="stylesheet" href="styles/shared/general.css" />
     <link rel="stylesheet" href="styles/shared/header.css" />
-    <link rel="icon" href="images/logos/amazon-mobile-logo-white.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="images/logos/amazon-mobile-logo-white.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/pages/orders.css">
   </head>
   <body>
-  <header class="header">
-    <section class="header-bar">
-      <section class="header-left-section">
-        <a href="amazon.html">
-          <img
-                  src="images/logos/amazon-logo-white.png"
-                  alt="Amazon Logo"
-                  width="194"
-                  height="60"
-                  class="logo-desktop"
+    <header class="header">
+      <section class="header-bar">
+        <section class="header-left-section">
+          <a href="amazon.html">
+            <img
+              src="images/logos/amazon-logo-white.png"
+              alt="Amazon Logo"
+              width="194"
+              height="60"
+              class="logo-desktop"
+            />
+            <img
+              src="images/logos/amazon-mobile-logo-white.png"
+              alt="Amazon Logo"
+              width="189"
+              height="194"
+              class="logo-mobile"
+            />
+          </a>
+        </section>
+        <section class="header-middle-section">
+          <label for="search" class="offscreen">search</label>
+          <input
+            type="search"
+            id="search"
+            placeholder="search"
+            class="search-input"
           />
-          <img
-                  src="images/logos/amazon-mobile-logo-white.png"
-                  alt="Amazon Logo"
-                  width="189"
-                  height="194"
-                  class="logo-mobile"
-          />
-        </a>
+          <button class="search-button">
+            <img
+              src="images/icon/search-icon.png"
+              alt="search"
+              width="45"
+              height="45"
+              class="search-icon"
+            />
+          </button>
+        </section>
+        <section class="header-right-section">
+          <nav class="nav-desktop-view">
+            <ul>
+              <li>
+                <a href="orders.html" class="order-link"
+                  >Returns <span class="nowrap">& </span>Orders
+                </a>
+              </li>
+              <li>
+                <a href="cart.html" class="cart-link"
+                  ><img
+                    src="images/icon/cart-icon.png"
+                    alt="cart-icon"
+                    width="78"
+                    height="54"
+                    class="cart-icon"
+                  />
+                  <p class="cart-text">cart</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="menu-button"
+            onclick="document.querySelector('.nav-mobile-view').classList.toggle('active')"
+          >
+            <img
+              class="menu-icon"
+              src="images/icon/hamburger-menu.png"
+              alt="menu"
+            />
+          </button>
+        </section>
       </section>
-      <section class="header-middle-section">
-        <label for="search" class="offscreen">search</label>
-        <input
-                type="search"
-                id="search"
-                placeholder="search"
-                class="search-input"
-        />
-        <button class="search-button">
-          <img
-                  src="images/icon/search-icon.png"
-                  alt="search"
-                  width="45"
-                  height="45"
-                  class="search-icon"
-          />
-        </button>
-      </section>
-      <section class="header-right-section">
-        <nav class="nav-desktop-view">
-          <ul>
-            <li>
-              <a href="orders.html" class="order-link"
-              >Returns <span class="nowrap">& </span>Orders </a>
-            </li>
-            <li>
-              <a href="cart.html" class="cart-link"
-              ><img
-                      src="images/icon/cart-icon.png"
-                      alt="cart-icon"
-                      width="78"
-                      height="54"
-                      class="cart-icon"
+      <nav class="nav-mobile-view">
+        <ul>
+          <li>
+            <a href="orders.html">Returns & Orders</a>
+          </li>
+          <li>
+            <a href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="order">
+      <h1 class="order-page-title">Your Orders</h1>
+      <section class="order-container">
+        <section class="order-header">
+          <section class="order-head-left">
+            <p class="order-header-describe">Order Placed:</p>
+            <p><time datetime="05-11">May 11</time></p>
+          </section>
+          <section class="order-head-middle">
+            <p class="order-header-describe">Total:</p>
+            <p>$35.06</p>
+          </section>
+          <section class="order-head-right">
+            <p class="order-header-describe">Order ID:</p>
+            <p>27cba69d-4c3d-4098-b42d-ac7fa62b7664</p>
+          </section>
+        </section>
+        <section class="order-item">
+          <section class="order-item-left">
+            <figure class="order-item-figure">
+              <img
+                src="images/products/athletic-cotton-socks-6-pairs.jpg"
+                alt="Black and Gray Athletic Cotton Socks - 6 Pairs"
+                width="679"
+                height="753"
               />
-                <p class="cart-text">cart</p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button
-                class="menu-button"
-                onclick="document.querySelector('.nav-mobile-view').classList.toggle('active')"
-        >
-          <img
-                  class="menu-icon"
-                  src="images/icon/hamburger-menu.png"
-                  alt="menu"
-          />
-        </button>
+              <figcaption class="offscreen"></figcaption>
+            </figure>
+          </section>
+          <section class="order-item-right">
+            <section class="order-item-delivery">
+              <p class="item-name">
+                Black and Gray Athletic Cotton Socks - 6 Pairs
+              </p>
+              <p class="delivery-date">Delivered on: May 14</p>
+              <p class="quantity">Quantity: 1</p>
+              <button>
+                <img
+                  src="images/icon/buy-again.png"
+                  alt="buy again"
+                  width="75"
+                  height="75"
+                />
+                Buy it again
+              </button>
+            </section>
+            <section class="order-item-track">
+              <button>Track package</button>
+            </section>
+          </section>
+        </section>
       </section>
-    </section>
-    <nav class="nav-mobile-view">
-      <ul>
-        <li>
-          <a href="orders.html">Returns & Orders</a>
-        </li>
-        <li>
-          <a href="cart.html">Cart</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      </section>
+    </main>
   </body>
 </html>
