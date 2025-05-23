@@ -44,10 +44,12 @@ li{
     --CARD-BUTTON-BGCOLOR: #FFD814;
     --CARD-ADDED-COLOR: #068b88;
     --CARD-BUTTON-HOVER-BGCOLOR: #FFD014FF;
+    --ORDER-HEADER-BGCOLOR: #f0f2f2;
     /*BORDER*/
     --BORDERS : 1px solid #131921;
     --BORDER-RADIUS : 5px;
     --CARD-BORDERS : 1px solid #e7e7e7;
+    --ORDER-BORDERS : 1px solid #d5d9d9;
     /*BOX-SHADOW*/
     --BOXSHADOW: 1px 1px 1px #e7e7e7;
 }

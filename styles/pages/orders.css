@@ -1,0 +1,75 @@
+@import "styles/shared/general.css";
+@media screen and (max-width: 2000px) {
+
+}
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1300px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: min(90%, 820px);
+}
+.order-page-title{
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.order-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border :var(--ORDER-BORDERS);
+    border-radius: 15px;
+}
+.order-header{
+    background-color: var(--ORDER-HEADER-BGCOLOR);
+    display: grid;
+    grid-template-columns: 20% 20% 1fr;
+    padding: 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.order-header-describe{
+    font-weight: 600;
+}
+.order-item{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    padding: 1rem;
+}
+.order-item-figure{
+    width: 70%;
+}
+.order-item-figure img{
+    width: 100%;
+    height: auto;
+}
