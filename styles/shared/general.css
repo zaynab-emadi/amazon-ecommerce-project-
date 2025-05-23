@@ -52,7 +52,7 @@ li{
     --CARD-BORDERS : 1px solid #e7e7e7;
     --ORDER-BORDERS : 1px solid #d5d9d9;
     /*BOX-SHADOW*/
-    --BOXSHADOW: 1px 1px 1px #e7e7e7;
+    --BOXSHADOW: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
 /*GENERAL*/
 html{
