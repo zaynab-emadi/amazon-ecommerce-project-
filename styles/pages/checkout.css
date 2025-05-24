@@ -4,9 +4,8 @@
 /*| GENERAL*/
 .header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
   height: 60px;
   position: sticky;
   top: 0;
@@ -20,6 +19,21 @@
 .amazon-logo-mobile {
   width: 35px;
   height: auto;
+}
+.cart-header-middle-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-header-right-section{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.cart-header-left-section{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 .cart-header-middle-section a {
   color: var(--CART-HEADER-LINK-COLOR);
