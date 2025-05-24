@@ -120,5 +120,35 @@ main{
 }
 
 @media screen and (max-width: 500px) {
-
+    .order-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .order-item-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .order-item-right{
+        width: 100%;
+    }
+    .order-item-delivery{
+        width: 100%;
+    }
+    .order-buy-again-button{
+        width: 100%;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+    .order-buy-again-button img{
+        width: 25px;
+        height: auto;
+    }
+    .order-item-track{
+        width: 100%;
+    }
+    .order-track-button{
+        width: 100%;
+    }
 }
