@@ -29,7 +29,7 @@ main{
     padding:1rem 1.8rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    border: var(--CARD-BORDERS);
+    border: var(--MAIN-BORDER);
 }
 .order-header-describe{
     font-weight: 700;
@@ -87,7 +87,7 @@ main{
     width: 100%;
  box-shadow: var(--BOXSHADOW);
     border-radius: 5px;
-    border: var(--CARD-BORDERS);
+    border: var(--MAIN-BORDER);
     background-color: white;
     padding: 0.5rem;
     flex: 0 0 auto;

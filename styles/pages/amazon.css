@@ -50,7 +50,7 @@
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  border: var(--CARD-BORDERS);
+  border: var(--MAIN-BORDER);
 }
 .card-figure {
   display: flex;

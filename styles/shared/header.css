@@ -44,7 +44,7 @@
   font-size: 17px;
   height: 70%;
   padding: 0.5rem;
-  border: var(--BORDERS);
+  border: var(--SEARCH-BOX-BORDER);
   border-right: none;
   border-top-left-radius: var(--BORDER-RADIUS);
   border-bottom-left-radius: var(--BORDER-RADIUS);
@@ -52,7 +52,7 @@
 .search-button {
   width: 50px;
   background-color: var(--SEARCH-BUTTON-BG);
-  border: var(--BORDERS);
+  border: var(--SEARCH-BOX-BORDER);
   border-left: none;
   height: 70%;
   padding: 0.5rem 0.3rem;
