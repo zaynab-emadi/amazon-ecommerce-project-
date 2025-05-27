@@ -11,7 +11,8 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 2px 15px;
+  padding: 2px max(7%, 30px);
+  background-color: var(--CHECKOUT-HEADER-BGCOLOR)
 }
 .amazon-logo-desktop {
   display: none;
@@ -48,4 +49,124 @@
     height: auto;
     margin-top: 10px;
   }
+}
+
+/*||ORDERED-ITEM*/
+main{
+  padding: 4rem max(7%, 30px);
+}
+main h1{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+.shopping-item{
+  border: var(--MAIN-BORDER);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+.shipping-date{
+  color: var(--CHECKOUT-SHIPPING-DATE-COLOR);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.shopping-item-info{
+  display: grid;
+  grid-template-columns: 150px 1.5fr 1fr;
+  gap: 1.5rem;
+}
+.shopping-item-details{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 17px;
+}
+.item-name, .delivery-option-title{
+  font-weight: 700;
+}
+.item-price{
+  font-weight: 700;
+  color: var(--CHECHOUT-PRICE-COLOR);
+}
+.item-quantity-control{
+  display: flex;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+.control-button{
+  color: var(--CHECKOUT-UPDATE-BUTTON-COLOR);
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+}
+.control-button:hover, .control-button:focus{
+  color: var(--CHECKOUT-UPDATE-BUTTON-HOVER-COLOR);
+  cursor: pointer;
+}
+.delivery-option{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 17px;
+}
+.options{
+  display: flex;
+  gap: 0.5rem;
+}
+.delivery-time{
+  color: var(--CHECKOUT-SHIPPING-DATE-COLOR);
+  font-weight: 800;
+}
+.shipping-price{
+  color: var(--CHECKOUT-SHIPPING-PRICE-COLOR);
+}
+/*||SUMMARY-SECTION*/
+.order-summary{
+  border: var(--MAIN-BORDER);
+  padding: 1rem;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+}
+.order-summary-details{
+  display: flex;
+  justify-content: space-between;
+}
+.half-line{
+  border: var(--MAIN-BORDER);
+  width: 70px;
+  align-self: end;
+  margin: 0.5rem 0;
+}
+.line{
+  border: var(--MAIN-BORDER);
+  margin-bottom: 1rem;
+}
+.order-summary-final{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  color: var(--CHECHOUT-PRICE-COLOR);
+  margin-bottom: 1rem;
+}
+.final-order-button{
+  background-color: var(--CARD-BUTTON-BGCOLOR);
+  border: none;
+  box-shadow: var(--BOXSHADOW);
+  padding: 1rem;
+  border-radius: var(--BORDER-RADIUS);
+  margin: 1.5rem 0 0.7rem 0;
+}
+.final-order-button:hover, .final-order-button:focus{
+  background-color: var(--CARD-BUTTON-HOVER-BGCOLOR);
+  cursor: pointer;
+
 }
